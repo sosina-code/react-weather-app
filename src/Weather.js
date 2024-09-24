@@ -62,7 +62,12 @@ export default function Weather(){
               </ul>
             </div>
           </div>
+          <footer>
+            <a href="https://github.com/sosina-code/react-weather-app">open source in github</a>
+          </footer>
+
         </div>
+        
       );
     }
     
