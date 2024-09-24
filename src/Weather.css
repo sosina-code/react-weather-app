@@ -1,7 +1,5 @@
-.Weather {
-    padding: 20px;
-    border: 1px solid #dadde1;
-    border-radius: 5px;
+Weather {
+    border: 1px solid black;
   }
   
   .Weather .overview {
@@ -66,4 +64,5 @@
     line-height: 15px;
     white-space: nowrap;
   }
+  
   
