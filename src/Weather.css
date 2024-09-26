@@ -34,20 +34,7 @@
     list-style: none;
   } 
   .weather footer{
-   font-size: 11px;
+   font-size: 16px;
 
   }
-  .weather .temperature{
-    font-weight: bold;
-    color: rgb(33, 33, 33);
-    font-size: 64px;
-    line-height: 64px;
-  }
-  .weather .unit{
-    color: rgb(33, 33, 33);
-    font-size: 16px;
-    font-weight: 400;
-    position:relative;
-    top: -32px;
-
-  }
+  
