@@ -83,7 +83,7 @@ export default function Weather(props){
       sosina-code
       </a>
       and is 
-      <a href="https://github.com/sosina-code/react-weather-app" target="_blank">
+      <a href="https://github.com/sosina-code/react-weather-app" target="_blank" rel="noreferrer"  >
         open-sourced on github
       </a>
     </footer>
