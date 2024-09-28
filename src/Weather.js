@@ -79,7 +79,7 @@ export default function Weather(props){
     </div>
     <footer>
       This project is coded by 
-      <a href="https://www.sosina.com" rel="" target="_blank">
+      <a href="https://www.sosina.com" rel="noreferrer" target="_blank">
       sosina-code
       </a>
       and is 
