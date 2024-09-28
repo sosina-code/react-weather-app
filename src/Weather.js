@@ -4,9 +4,8 @@ import"./Weather.css";
 import FormattedDate from "./FormattedDate";
 import WeatherInfo from "./WeatherInfo";
 export default function Weather(props){
-  const [ready, setReady] =useState(false);
   const [city,setCity]=useState(props.defaultCity);
-  const [weatherData, setWeatherDate] =useState({});
+  const [weatherData, setWeatherDate] =useState({ready: false});
   function handleResponse(response){
     console.log(response.data);
     setWeatherDate({
@@ -20,7 +19,7 @@ export default function Weather(props){
     });
 
 
-    setReady(true);
+  
   }
  
   function handleSubmit(event){
@@ -34,7 +33,7 @@ export default function Weather(props){
   }
   function search(){
     let apiKey ="6e6ec494746b5229a9f2d526478c924c";
-    let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&unit=metric`;
+    let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&unit=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -80,7 +79,7 @@ export default function Weather(props){
     </div>
     <footer>
       This project is coded by 
-      <a href="https://www.sosina.com" target="_blank">
+      <a href="https://www.sosina.com" rel="" target="_blank">
       sosina-code
       </a>
       and is 
